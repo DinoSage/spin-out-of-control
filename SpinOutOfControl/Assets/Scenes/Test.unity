@@ -281,6 +281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a912c9e793f6354aa8d7778d13acac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpDuration: 1
+  endValueMagnitude: 90
 --- !u!1 &734436961
 GameObject:
   m_ObjectHideFlags: 0

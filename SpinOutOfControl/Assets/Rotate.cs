@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     public float lerpDuration = 1;
+    public const float gravity = -9.81f;
     public float endValueMagnitude = 90f;
     int rotateDirection = 1; // -1 for Right, 1 for Left, 0 for Not Rotating
 
@@ -13,7 +14,6 @@ public class Rotate : MonoBehaviour
     float valueToLerp;
 
     bool rotating = false;
-    bool rotateRight = false;
     float prerotationZ;
 
     // Start is called before the first frame update
@@ -34,6 +34,13 @@ public class Rotate : MonoBehaviour
             else
             {
                 rotateDirection = 1;
+            }
+
+            // Shut of Gravity
+            Rigidbody2D[] bodies = GetComponentsInChildren<Rigidbody2D>();
+            foreach(Rigidbody2D body in bodies)
+            {
+                body.simulated = false;
             }
 
             timeElapsed = 0f;
@@ -60,10 +67,15 @@ public class Rotate : MonoBehaviour
         {
             valueToLerp = endValueMagnitude;
             rotating = false;
+            
+            //Reenable Gravity
+            Rigidbody2D[] bodies = GetComponentsInChildren<Rigidbody2D>();
+            foreach (Rigidbody2D body in bodies)
+            {
+                body.velocity = Vector2.zero;
+                body.simulated = true;
+            }
         }
-
-        if (rotateRight)
-            valueToLerp *= -1;
 
         transform.rotation = Quaternion.AngleAxis(prerotationZ + (rotateDirection * valueToLerp), Vector3.forward);
     }
