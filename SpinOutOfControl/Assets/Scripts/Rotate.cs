@@ -9,6 +9,7 @@ public class Rotate : MonoBehaviour
     public float endValueMagnitude = 90f;
     int rotateDirection = 1; // -1 for Right, 1 for Left, 0 for Not Rotating
 
+
     float timeElapsed;
     float startValue = 0;
     float valueToLerp;
@@ -36,11 +37,11 @@ public class Rotate : MonoBehaviour
                 rotateDirection = 1;
             }
 
-            // Shut of Gravity
+            // Shut of Gravity & Unfreeze Rotation
             Rigidbody2D[] bodies = GetComponentsInChildren<Rigidbody2D>();
             foreach(Rigidbody2D body in bodies)
             {
-                body.simulated = false;
+                body.simulated = false;         
             }
 
             timeElapsed = 0f;
