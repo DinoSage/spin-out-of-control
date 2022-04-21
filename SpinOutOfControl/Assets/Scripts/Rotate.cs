@@ -47,7 +47,6 @@ public class Rotate : MonoBehaviour
 
             timeElapsed = 0f;
             rotating = true;
-            Debug.Log(transform.rotation.eulerAngles.z);
             prerotationZ = transform.eulerAngles.z;
         }
 
