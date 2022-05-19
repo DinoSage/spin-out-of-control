@@ -9,8 +9,10 @@ public class Rotate : MonoBehaviour
     public float endValueMagnitude = 90f;
     int rotateDirection = 1; // -1 for Right, 1 for Left, 0 for Not Rotating
 
+    public GameObject player;
+
     float timeElapsed;
-    float startValue = 0;
+    readonly float startValue = 0;
     float valueToLerp;
 
     bool rotating = false;
@@ -36,16 +38,15 @@ public class Rotate : MonoBehaviour
                 rotateDirection = 1;
             }
 
-            // Shut of Gravity
+            // Shut of Gravity & Unfreeze Rotation
             Rigidbody2D[] bodies = GetComponentsInChildren<Rigidbody2D>();
             foreach(Rigidbody2D body in bodies)
             {
-                body.simulated = false;
+                body.simulated = false;         
             }
 
             timeElapsed = 0f;
             rotating = true;
-            Debug.Log(transform.rotation.eulerAngles.z);
             prerotationZ = transform.eulerAngles.z;
         }
 
@@ -75,6 +76,7 @@ public class Rotate : MonoBehaviour
                 body.velocity = Vector2.zero;
                 body.simulated = true;
             }
+
         }
 
         transform.rotation = Quaternion.AngleAxis(prerotationZ + (rotateDirection * valueToLerp), Vector3.forward);
