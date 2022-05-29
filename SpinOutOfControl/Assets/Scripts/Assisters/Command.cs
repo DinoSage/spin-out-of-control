@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IFreezable
-{
-    public void CheckFreeze();
+public interface Command
+{ 
+    public void execute();
 }
