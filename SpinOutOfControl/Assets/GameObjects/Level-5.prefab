@@ -613,4 +613,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7194fcac97036804d97f70a040db12a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <PlayerPos>k__BackingField: {x: 0, y: 0}
+  <PlayerPos>k__BackingField: {x: -0.5, y: 2.3}

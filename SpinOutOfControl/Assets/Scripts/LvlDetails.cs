@@ -6,6 +6,6 @@ public class LvlDetails : MonoBehaviour
 {
     // Properties
     [field: SerializeField]
-    public Vector2 PlayerPos { get; }
+    public Vector2 PlayerPos { get; set; }
     
 }

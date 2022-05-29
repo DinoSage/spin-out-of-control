@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface Command
 { 
-    public void execute();
+    public void Execute();
 }
