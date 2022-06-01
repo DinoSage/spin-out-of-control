@@ -12,13 +12,10 @@ public class LevelManager : MonoBehaviour
     public int currLevelIndex;
     [SerializeField] GameObject player;
 
-    bool temp = true;
-
     private void Awake()
     {
         //Add to Instances class
         Instances.LEVEL_MANAGER = this;
-        Debug.Log(this == false);
     }
 
     // Start is called before the first frame update
@@ -32,11 +29,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (temp)
-        {
-            //Debug.Log("LvlManager: " + (Instances.LEVEL_MANAGER == null));
-            temp = true;
-        }
+        
     }
 
     public void SetLevel(int index)
