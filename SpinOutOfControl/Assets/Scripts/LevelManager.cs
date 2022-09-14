@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     //Constants
-    public const int MAX_LEVELS = 5;
+    //public const int MAX_LEVELS;
 
     // Variables
     public List<GameObject> levels;
@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
         //Starting Level
         currLevelIndex = 0;
         SetLevel(currLevelIndex);
+        //MAX_LEVELS = levels.length;
     }
 
     // Update is called once per frame
@@ -34,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
     public void SetLevel(int index)
     {
-        if (index >= 0 && index < MAX_LEVELS)
+        if (index >= 0 && index < levels.Count)
         {
             player.SetActive(false);
 
