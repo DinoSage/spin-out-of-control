@@ -182,11 +182,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c680356edac644cb3fae64110f33f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels: []
   currentLevel: {fileID: 0}
   currLevelIndex: 0
+  spritearray: []
   player: {fileID: 2066744597}
-  prefab: {fileID: 7157330489978212668, guid: 90f9cd3e9628cdc4bb3bd3366f93b09b, type: 3}
 --- !u!156049354 &293255771
 Grid:
   m_ObjectHideFlags: 0

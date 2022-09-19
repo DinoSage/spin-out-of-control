@@ -11,6 +11,6 @@ public class LvlSwitchCommand : Command
     {
         lvlManager = Instances.LEVEL_MANAGER;
         int currentIndex = lvlManager.currLevelIndex;
-        lvlManager.SetLevel((currentIndex + 1) % lvlManager.levels.Count);
+        lvlManager.SetLevel((currentIndex + 1) % lvlManager.spritearray.Length);
     }
 }
