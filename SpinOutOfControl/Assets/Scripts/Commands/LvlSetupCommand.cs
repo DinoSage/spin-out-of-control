@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
-public class LvlSwitchCommand : Command
+public class LvlSetupCommand : Command
 {
     LevelManager lvlManager;
-
 
     public void Execute()
     {
         lvlManager = Instances.LEVEL_MANAGER;
-        int currentIndex = lvlManager.currLevelIndex;
-        lvlManager.SetLevel((currentIndex + 1) % lvlManager.levels.Count);
+        List<GameObject> levels = new List<GameObject>();
+
     }
 }

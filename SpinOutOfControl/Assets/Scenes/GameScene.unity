@@ -182,16 +182,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c680356edac644cb3fae64110f33f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 7157330489978212668, guid: 47de8d9bbc9680542bf3b82de77f55c5, type: 3}
-  - {fileID: 7157330489978212668, guid: 53091898767928845b71671166d973cc, type: 3}
-  - {fileID: 7157330489978212668, guid: 9c6b6cfecc6033f4dbd0bbf2cf48bd17, type: 3}
-  - {fileID: 7157330489978212668, guid: a9f8919e338bfa644b8bf358d76ca118, type: 3}
-  - {fileID: 7157330489978212668, guid: 5af652796df465d44bd2f4b682c9aa09, type: 3}
-  - {fileID: 4273624954101159363, guid: 7821aa45db21a51439ef74d43522cf47, type: 3}
+  levels: []
   currentLevel: {fileID: 0}
   currLevelIndex: 0
   player: {fileID: 2066744597}
+  prefab: {fileID: 7157330489978212668, guid: 90f9cd3e9628cdc4bb3bd3366f93b09b, type: 3}
 --- !u!156049354 &293255771
 Grid:
   m_ObjectHideFlags: 0
