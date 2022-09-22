@@ -27,7 +27,6 @@ public class LevelManager : MonoBehaviour
         // Setup the levels
         lvlSetup.Execute();
         
-        //MAX_LEVELS = levels.length;
     }
 
     // Update is called once per frame
@@ -42,6 +41,9 @@ public class LevelManager : MonoBehaviour
         {
             player.SetActive(false);
 
+            //Reset Level Orientation
+            currentLevel.transform.Rotate(0, 0, 0);
+
             //Set Current Index
             currLevelIndex = index;
 
@@ -51,7 +53,7 @@ public class LevelManager : MonoBehaviour
             Destroy(currentLevel.GetComponent<PolygonCollider2D>());
             currentLevel.AddComponent<PolygonCollider2D>();
 
-            // Set Player Position Based on Level's Details
+            //Set Player Position Based on Level's Details
             Vector2 initPos = currentLevel.GetComponent<LvlDetails>().PlayerPos;
 
             player.transform.SetPositionAndRotation(new Vector3(initPos.x, initPos.y), Quaternion.identity);

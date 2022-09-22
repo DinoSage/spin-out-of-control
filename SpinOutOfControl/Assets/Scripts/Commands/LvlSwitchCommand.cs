@@ -6,7 +6,6 @@ public class LvlSwitchCommand : Command
 {
     LevelManager lvlManager;
 
-
     public void Execute()
     {
         lvlManager = Instances.LEVEL_MANAGER;

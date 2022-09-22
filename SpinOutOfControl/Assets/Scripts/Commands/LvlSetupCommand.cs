@@ -12,7 +12,7 @@ public class LvlSetupCommand : Command
         lvlManager = Instances.LEVEL_MANAGER;
 
         // Initialize Sprite Array
-        lvlManager.spritearray = Resources.LoadAll<Sprite>("levels");
+        lvlManager.spritearray = Resources.LoadAll<Sprite>("levels-new");
 
         // Create current level object
 
