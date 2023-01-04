@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     int direction = 0; //-1 Left, 1 Right
-    [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] float rotationSpeed;
 
     // Start is called before the first frame update
     void Start()

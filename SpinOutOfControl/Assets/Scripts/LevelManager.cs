@@ -1,16 +1,19 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    //Constants
-    public const int MAX_LEVELS = 5;
 
     // Variables
-    public List<GameObject> levels;
     public GameObject currentLevel;
     public int currLevelIndex;
+    public Sprite[] spritearray;
     [SerializeField] GameObject player;
+
+    // Commands
+    LvlSetupCommand lvlSetup = new LvlSetupCommand();
 
     private void Awake()
     {
@@ -21,38 +24,36 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Starting Level
-        currLevelIndex = 0;
-        SetLevel(currLevelIndex);
+        // Setup the levels
+        lvlSetup.Execute();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void SetLevel(int index)
     {
-        if (index >= 0 && index < MAX_LEVELS)
+        if (index >= 0 && index < spritearray.Length)
         {
             player.SetActive(false);
 
-            //Destroy Existing Level Instance
-            if (currentLevel != null)
-            {
-                Destroy(currentLevel);
-            }
+            //Reset Level Orientation
+            currentLevel.transform.Rotate(0, 0, 0);
 
             //Set Current Index
             currLevelIndex = index;
 
             //Create and Reassign Current Level Instance
-            currentLevel = Instantiate(levels[index]);
-            currentLevel.transform.SetParent(this.transform);
-            currentLevel.transform.localPosition = new Vector3(0, 0, 0);
+            currentLevel.GetComponent<SpriteRenderer>().sprite = spritearray[index];
 
-            // Set Player Position Based on Level's Details
+            Destroy(currentLevel.GetComponent<PolygonCollider2D>());
+            currentLevel.AddComponent<PolygonCollider2D>();
+
+            //Set Player Position Based on Level's Details
             Vector2 initPos = currentLevel.GetComponent<LvlDetails>().PlayerPos;
 
             player.transform.SetPositionAndRotation(new Vector3(initPos.x, initPos.y), Quaternion.identity);
