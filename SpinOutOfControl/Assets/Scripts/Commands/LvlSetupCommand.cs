@@ -12,7 +12,7 @@ public class LvlSetupCommand : Command
         lvlManager = Instances.LEVEL_MANAGER;
 
         // Initialize Sprite Array
-        lvlManager.spritearray = Resources.LoadAll<Sprite>("levels-new");
+        lvlManager.spritearray = Resources.LoadAll<Sprite>(lvlManager.lvlLocation);
 
         // Create current level object
 
@@ -32,7 +32,7 @@ public class LvlSetupCommand : Command
         //polygonCollider2D.enabled = true;
 
         LvlDetails lvld = lvl.AddComponent<LvlDetails>();
-        lvld.PlayerPos.Set(0, 0);
+        //lvld.PlayerPos = new Vector2(0, 0);
 
         //levels.Add(lvl1);
 

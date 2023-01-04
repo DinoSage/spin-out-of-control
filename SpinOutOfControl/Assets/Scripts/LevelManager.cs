@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     // Variables
     public GameObject currentLevel;
     public int currLevelIndex;
+    public string lvlLocation;
     public Sprite[] spritearray;
     [SerializeField] GameObject player;
 
@@ -54,7 +55,8 @@ public class LevelManager : MonoBehaviour
             currentLevel.AddComponent<PolygonCollider2D>();
 
             //Set Player Position Based on Level's Details
-            Vector2 initPos = currentLevel.GetComponent<LvlDetails>().PlayerPos;
+            //Vector2 initPos = currentLevel.GetComponent<LvlDetails>().PlayerPos;
+            Vector2 initPos = currentLevel.transform.position;
 
             player.transform.SetPositionAndRotation(new Vector3(initPos.x, initPos.y), Quaternion.identity);
 

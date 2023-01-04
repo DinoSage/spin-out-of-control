@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLevel: {fileID: 0}
   currLevelIndex: 0
+  lvlLocation: triangle-levels
   spritearray: []
   player: {fileID: 2066744597}
 --- !u!156049354 &293255771
