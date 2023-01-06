@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class GameLevelManager : MonoBehaviour
 {
 
     // Variables
     public GameObject currentLevel;
-    public int currLevelIndex;
+    public static int currLevelIndex;
     public string lvlLocation;
     public Sprite[] spritearray;
     [SerializeField] GameObject player;
-
-    // Commands
-    LvlSetupCommand lvlSetup = new LvlSetupCommand();
 
     private void Awake()
     {
@@ -26,8 +23,30 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         // Setup the levels
-        lvlSetup.Execute();
-        
+
+        // Initialize Sprite Array
+        spritearray = Resources.LoadAll<Sprite>(lvlLocation);
+
+        // Create current level object
+
+        currentLevel = new GameObject();
+
+        GameObject lvl = currentLevel;
+
+        lvl.transform.SetParent(transform);
+        lvl.transform.localPosition = new Vector3(0, 0, 0);
+
+        SpriteRenderer renderer = lvl.AddComponent<SpriteRenderer>();
+
+
+        lvl.name = "levels";
+
+        PolygonCollider2D polygonCollider2D = lvl.AddComponent<PolygonCollider2D>();
+
+        //Starting Level
+        //currLevelIndex = 0;
+        SetLevel(currLevelIndex);
+
     }
 
     // Update is called once per frame
@@ -63,5 +82,10 @@ public class LevelManager : MonoBehaviour
             //Reactivate Player
             player.SetActive(true);
         }
+    }
+
+    public void NextLevel()
+    {
+        SetLevel((currLevelIndex + 1) % spritearray.Length);
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 
 public static class Instances
 {
-    public static LevelManager LEVEL_MANAGER;
+    public static GameLevelManager LEVEL_MANAGER;
 }
 
 

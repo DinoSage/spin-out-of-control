@@ -258,8 +258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 293255766}
   - component: {fileID: 293255767}
-  - component: {fileID: 293255770}
   - component: {fileID: 293255771}
+  - component: {fileID: 293255772}
   m_Layer: 0
   m_Name: LevelDirector
   m_TagString: Untagged
@@ -295,23 +295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
---- !u!114 &293255770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293255764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67c680356edac644cb3fae64110f33f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: {fileID: 0}
-  currLevelIndex: 0
-  lvlLocation: triangle-levels
-  spritearray: []
-  player: {fileID: 2066744597}
 --- !u!156049354 &293255771
 Grid:
   m_ObjectHideFlags: 0
@@ -324,6 +307,22 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &293255772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293255764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c680356edac644cb3fae64110f33f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: {fileID: 0}
+  lvlLocation: levels-new
+  spritearray: []
+  player: {fileID: 2066744597}
 --- !u!1 &734436961
 GameObject:
   m_ObjectHideFlags: 0
