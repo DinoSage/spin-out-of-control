@@ -1,65 +1,66 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    public static Sprite[] spritearray;
+    public string lvlLocation;
+    public static int currLevelIndex;
 
-    // Variables
-    public GameObject currentLevel;
-    public int currLevelIndex;
-    public Sprite[] spritearray;
-    [SerializeField] GameObject player;
+    [SerializeField] GameObject circleLevel;
 
-    // Commands
-    LvlSetupCommand lvlSetup = new LvlSetupCommand();
+    [SerializeField] GameObject levelGrid;
 
-    private void Awake()
-    {
-        //Add to Instances class
-        Instances.LEVEL_MANAGER = this;
-    }
+    // The farthest level reached by player
+    public static int latest;
+    public static string latestKey = "FARTHEST_LEVEL";
 
     // Start is called before the first frame update
     void Start()
     {
-        // Setup the levels
-        lvlSetup.Execute();
-        
-    }
+        Debug.Log("Start!!!!");
+        // Retrive Farthest Level reached
+        latest = PlayerPrefs.GetInt(latestKey, -1);
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void SetLevel(int index)
-    {
-        if (index >= 0 && index < spritearray.Length)
+        if (latest < 1)
         {
-            player.SetActive(false);
+            // Define FarthestLevel
+            latest = 1;
+            PlayerPrefs.SetInt(latestKey, latest);
+        }
 
-            //Reset Level Orientation
-            currentLevel.transform.Rotate(0, 0, 0);
 
-            //Set Current Index
-            currLevelIndex = index;
+        // Load levels
+        spritearray = Resources.LoadAll<Sprite>(lvlLocation);
+        int levelCount = spritearray.Length;
 
-            //Create and Reassign Current Level Instance
-            currentLevel.GetComponent<SpriteRenderer>().sprite = spritearray[index];
+        // Create Level Selector Buttons
+        for (int i = 1; i <= levelCount; i++)
+        {
+            Debug.Log(i);
+            GameObject lvlBtn = Instantiate(circleLevel, this.transform, false);
+            lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
-            Destroy(currentLevel.GetComponent<PolygonCollider2D>());
-            currentLevel.AddComponent<PolygonCollider2D>();
+            // Deactivate button if not yet unlocked
+            if (i > latest)
+            {
+                Button btnComponent = lvlBtn.GetComponent<Button>();
+                btnComponent.interactable = false;
+            }
+        }
+    }
 
-            //Set Player Position Based on Level's Details
-            Vector2 initPos = currentLevel.GetComponent<LvlDetails>().PlayerPos;
-
-            player.transform.SetPositionAndRotation(new Vector3(initPos.x, initPos.y), Quaternion.identity);
-
-            //Reactivate Player
-            player.SetActive(true);
+    // Updates farthest level if it has changed
+    public static void CheckFarthestLevel()
+    {
+        Debug.Log("Entered!");
+        if ((currLevelIndex + 1) > latest)
+        {
+            latest = currLevelIndex + 1;
+            PlayerPrefs.SetInt(latestKey, latest);
         }
     }
 }
