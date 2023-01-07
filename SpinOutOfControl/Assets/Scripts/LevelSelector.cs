@@ -10,7 +10,8 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] TextMeshProUGUI textField;
    public void Click()
     {
-        GameLevelManager.currLevelIndex = int.Parse(textField.text) - 1;
+        // Specify strating level
+        LevelManager.currLevelIndex = int.Parse(textField.text) - 1;
         SceneManager.LoadScene("GameScene");
     }
 

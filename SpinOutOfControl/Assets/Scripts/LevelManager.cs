@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UILevelManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    public Sprite[] spritearray;
-    public string lvlLocation;
-    public int levelCount;
+    public static Sprite[] spritearray;
+    public static string lvlLocation;
+    public static int levelCount;
+    public static int currLevelIndex;
+
     [SerializeField] GameObject circleLevel;
 
     [SerializeField] GameObject levelGrid;
