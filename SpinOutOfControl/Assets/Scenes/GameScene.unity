@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 170754779}
   - component: {fileID: 170754778}
   m_Layer: 0
-  m_Name: Pipe
+  m_Name: Collision Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 293255771}
   - component: {fileID: 293255772}
   m_Layer: 0
-  m_Name: LevelDirector
+  m_Name: Level Switcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,8 +320,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: {fileID: 0}
-  lvlLocation: levels-new
-  spritearray: []
   player: {fileID: 2066744597}
 --- !u!1 &734436961
 GameObject:

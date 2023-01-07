@@ -11,7 +11,7 @@ public class CollisionLevelTrigger : MonoBehaviour
         if(collider.attachedRigidbody.tag == "Player")
         {
             // Find Object w/ Level Switcher
-            LevelSwitcher switcher = GameObject.Find("Collision Trigger").GetComponent<LevelSwitcher>();
+            LevelSwitcher switcher = GameObject.Find("Level Switcher").GetComponent<LevelSwitcher>();
 
             // Call Next Level Function
             switcher.NextLevel();

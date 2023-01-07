@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelSwitcher : MonoBehaviour
 {
@@ -25,6 +26,14 @@ public class LevelSwitcher : MonoBehaviour
         // Change level to selected index
         ChangeLevel(LevelManager.currLevelIndex);
 
+    }
+    void Update()
+    {
+        // Key Input to return to level selector
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("LevelScene");
+        }
     }
 
     public void ChangeLevel(int index)
@@ -57,6 +66,9 @@ public class LevelSwitcher : MonoBehaviour
             //Re-activate Player
             player.SetActive(true);
         }
+
+        // Check if farthest level has changed
+        LevelManager.CheckFarthestLevel();
     }
 
     public void NextLevel()

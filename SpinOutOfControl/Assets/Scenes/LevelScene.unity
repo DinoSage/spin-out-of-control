@@ -312,11 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7ee201d650a8c4795e5c2abdd927eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritearray: []
   lvlLocation: levels-new
-  levelCount: 0
-  circleLevel: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
-    type: 3}
+  circleLevel: {fileID: 2002400828}
   levelGrid: {fileID: 470665448}
 --- !u!1 &741181826
 GameObject:
@@ -863,6 +860,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954583154}
   m_CullTransparentMesh: 1
+--- !u!1 &2002400828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
+    type: 3}
+  m_PrefabInstance: {fileID: 2226716879971196018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2226716879971196018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -974,6 +977,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226716879759697593, guid: f90b69f54f4132c4bbf1392f60713b02,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.253916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226716879759697593, guid: f90b69f54f4132c4bbf1392f60713b02,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.253916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226716879759697593, guid: f90b69f54f4132c4bbf1392f60713b02,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.254717
       objectReference: {fileID: 0}
     - target: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
         type: 3}
