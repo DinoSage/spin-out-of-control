@@ -12,11 +12,15 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] GameObject circleLevel;
 
-    [SerializeField] GameObject levelGrid;
-
     // The farthest level reached by player
     public static int latest;
     public static string latestKey = "FARTHEST_LEVEL";
+
+    public int MAX_SHIFTS;
+    public int MIN_SHIFTS = 0;
+    public int shift;
+    public int SHIFT_SIZE;
+    public float LEVELS_PER_SHIFT;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +44,6 @@ public class LevelManager : MonoBehaviour
         // Create Level Selector Buttons
         for (int i = 1; i <= levelCount; i++)
         {
-            Debug.Log(i);
             GameObject lvlBtn = Instantiate(circleLevel, this.transform, false);
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
@@ -51,16 +54,38 @@ public class LevelManager : MonoBehaviour
                 btnComponent.interactable = false;
             }
         }
+
+        MAX_SHIFTS = (int) Mathf.Ceil(levelCount / LEVELS_PER_SHIFT) - 1;
+        shift = 0;
     }
 
     // Updates farthest level if it has changed
     public static void CheckFarthestLevel()
     {
-        Debug.Log("Entered!");
         if ((currLevelIndex + 1) > latest)
         {
             latest = currLevelIndex + 1;
             PlayerPrefs.SetInt(latestKey, latest);
         }
+    }
+
+    public IEnumerator Shift(bool shiftingRight)
+    {
+        Debug.Log("Checking right: " + (shift + 1 <= MAX_SHIFTS && shiftingRight));
+        Debug.Log("Checking left: " + (shift - 1 >= MIN_SHIFTS && !shiftingRight));
+        Debug.Log(shiftingRight);
+
+        if ((shift + 1 <= MAX_SHIFTS && shiftingRight) || (shift - 1 >= MIN_SHIFTS && !shiftingRight))
+        {
+            // Change the shift number
+            shift += (shiftingRight) ? 1 : -1;
+
+            // Find & Change Transform position
+            Vector3 pos = this.transform.localPosition;
+            Vector3 newPos = new Vector3(-1 * shift * SHIFT_SIZE, pos.y, pos.z);
+            this.transform.localPosition = newPos;
+        }
+
+        yield return null;
     }
 }

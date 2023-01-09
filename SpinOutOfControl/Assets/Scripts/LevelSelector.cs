@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class LevelSelector : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textField;
+    [SerializeField] LevelManager lvlManger;
+
    public void Click()
     {
         // Specify strating level
@@ -15,10 +17,9 @@ public class LevelSelector : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    // Non-Click Methods
     public void ChangeText(string text)
     {
         textField.text = text;
     }
-
-
 }
