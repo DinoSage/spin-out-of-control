@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
         // Load levels
         spritearray = Resources.LoadAll<Sprite>(lvlLocation);
-        int levelCount = spritearray.Length;
+        int levelCount = spritearray.Length + 50;
 
         // Create Level Selector Buttons
         for (int i = 1; i <= levelCount; i++)

@@ -40,6 +40,9 @@ public class LevelSwitcher : MonoBehaviour
     {
         var spritearray = LevelManager.spritearray;
 
+        // Wrap Around if index too high
+        LevelManager.currLevelIndex = (LevelManager.currLevelIndex) % LevelManager.spritearray.Length;
+
         // Ensure index is within bounds
         if (index >= 0 && index < spritearray.Length)
         {
