@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 2226716879759697593}
   - component: {fileID: 2226716879759697596}
   m_Layer: 5
-  m_Name: CircleLevel
+  m_Name: GenericLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,3 +283,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 2226716879286511253}
+  lvlManger: {fileID: 0}

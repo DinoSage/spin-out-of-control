@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     public static Sprite[] spritearray;
-    public string lvlLocation;
+    public static string lvlLocation;
+    public static GameObject levelPrefab;
+
     public static int currLevelIndex;
 
-    [SerializeField] GameObject circleLevel;
 
     // The farthest level reached by player
     public static int latest;
@@ -48,7 +49,7 @@ public class LevelManager : MonoBehaviour
         // Create Level Selector Buttons
         for (int i = 1; i <= levelCount; i++)
         {
-            GameObject lvlBtn = Instantiate(circleLevel, this.transform, false);
+            GameObject lvlBtn = Instantiate(levelPrefab, this.transform, false);
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
             // Deactivate button if not yet unlocked
