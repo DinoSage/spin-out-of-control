@@ -14,12 +14,12 @@ public class LevelMenuManager : MonoBehaviour
 
 
     // The farthest level reached by player
-    public static int latest;
-    public static string latestKey = "FARTHEST_LEVEL";
+    int LEVEL_REACHED;
+    public const string LEVEL_REACHED_KEY = "LEVEL_REACHED";
 
     // Shifting Variables
     public int MAX_SHIFTS;
-    public int MIN_SHIFTS = 0;
+    const int MIN_SHIFTS = 0;
     public int shift;
     public int SHIFT_SIZE;
     public float LEVELS_PER_SHIFT;
@@ -31,15 +31,14 @@ public class LevelMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Start!!!!");
         // Retrive Farthest Level reached
-        latest = PlayerPrefs.GetInt(latestKey, -1);
+        LEVEL_REACHED = PlayerPrefs.GetInt(LEVEL_REACHED_KEY, -1);
 
-        if (latest < 1)
+        if (LEVEL_REACHED < 1)
         {
             // Define FarthestLevel
-            latest = 1;
-            PlayerPrefs.SetInt(latestKey, latest);
+            LEVEL_REACHED = 1;
+            PlayerPrefs.SetInt(LEVEL_REACHED_KEY, LEVEL_REACHED);
         }
 
         // Load levels
@@ -53,7 +52,7 @@ public class LevelMenuManager : MonoBehaviour
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
             // Deactivate button if not yet unlocked
-            if (i > latest)
+            if (i > LEVEL_REACHED)
             {
                 Button btnComponent = lvlBtn.GetComponent<Button>();
                 btnComponent.interactable = false;
@@ -62,16 +61,6 @@ public class LevelMenuManager : MonoBehaviour
 
         MAX_SHIFTS = (int)Mathf.Ceil(levelCount / LEVELS_PER_SHIFT) - 1;
         shift = 0;
-    }
-
-    // Updates farthest level if it has changed
-    public static void CheckFarthestLevel()
-    {
-        if ((currLevelIndex + 1) > latest)
-        {
-            latest = currLevelIndex + 1;
-            PlayerPrefs.SetInt(latestKey, latest);
-        }
     }
 
     public IEnumerator Shift(bool shiftingRight)

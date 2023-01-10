@@ -14,16 +14,6 @@ public class ShiftIndicator : MonoBehaviour
     public int SHIFT_GAP = 75;
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        /*Debug.Log("Shift Indicator!");
-        lvlManager = lvlMangerObj.GetComponent<LevelManager>();
-
-        createIndicator(lvlManager.MAX_SHIFTS, lvlManager.shift);
-        lastShift = lvlManager.shift;*/
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class GridShifter : MonoBehaviour
 {
-    [SerializeField] LevelMenuManager lvlManger;
+    [SerializeField] GameObject levelMenu;
 
     public void ShiftGridLeft()
     {
-        if (!lvlManger.isShifting)
-            StartCoroutine(lvlManger.Shift(false));
+        // Start Shifting Coroutine (Left)
+        LevelMenuManager manager = levelMenu.GetComponent<LevelMenuManager>();
+        if (!manager.isShifting)
+            StartCoroutine(manager.Shift(false));
     }
 
     public void ShiftGridRight()
     {
-        if (!lvlManger.isShifting)
-            StartCoroutine(lvlManger.Shift(true));
+        // Start Shifting Coroutine (Right)
+        LevelMenuManager manager = levelMenu.GetComponent<LevelMenuManager>();
+        if (!manager.isShifting)
+            StartCoroutine(manager.Shift(true));
     }
 }

@@ -71,7 +71,12 @@ public class LevelSwitcher : MonoBehaviour
         }
 
         // Check if farthest level has changed
-        LevelMenuManager.CheckFarthestLevel();
+        int levelReached = PlayerPrefs.GetInt(LevelMenuManager.LEVEL_REACHED_KEY);
+        if ((index + 1) > levelReached)
+        {
+            levelReached = index + 1;
+            PlayerPrefs.SetInt(LevelMenuManager.LEVEL_REACHED_KEY, levelReached);
+        }
     }
 
     public void NextLevel()

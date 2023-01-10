@@ -320,7 +320,7 @@ MonoBehaviour:
   MAX_SHIFTS: 0
   MIN_SHIFTS: 0
   shift: 0
-  SHIFT_SIZE: 0
+  SHIFT_SIZE: 800
   LEVELS_PER_SHIFT: 12
   SHIFT_DURATION: 1
   isShifting: 0
