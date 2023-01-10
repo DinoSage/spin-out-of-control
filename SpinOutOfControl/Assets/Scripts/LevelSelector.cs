@@ -12,8 +12,9 @@ public class LevelSelector : MonoBehaviour
 
    public void Click()
     {
+
         // Specify strating level
-        LevelMenuManager.currLevelIndex = int.Parse(textField.text) - 1;
+        LevelSwitcher.currLevelIndex = int.Parse(textField.text) - 1;
         SceneManager.LoadScene("GameScene");
     }
 

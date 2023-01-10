@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridShifter : MonoBehaviour
+public class MenuShifter : MonoBehaviour
 {
     [SerializeField] GameObject levelMenu;
 
     public void ShiftGridLeft()
     {
-        // Start Shifting Coroutine (Left)
+        // Start Shifting Coroutine (Left) if aren't already shifting
         LevelMenuManager manager = levelMenu.GetComponent<LevelMenuManager>();
         if (!manager.isShifting)
             StartCoroutine(manager.Shift(false));
@@ -16,7 +16,7 @@ public class GridShifter : MonoBehaviour
 
     public void ShiftGridRight()
     {
-        // Start Shifting Coroutine (Right)
+        // Start Shifting Coroutine (Right) if aren't already shifting
         LevelMenuManager manager = levelMenu.GetComponent<LevelMenuManager>();
         if (!manager.isShifting)
             StartCoroutine(manager.Shift(true));

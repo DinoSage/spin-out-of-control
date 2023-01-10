@@ -8,6 +8,7 @@ public class LevelSwitcher : MonoBehaviour
 {
 
     // Variables
+    public static int currLevelIndex;
     public GameObject currentLevel;
     [SerializeField] GameObject player;
 
@@ -24,7 +25,7 @@ public class LevelSwitcher : MonoBehaviour
         PolygonCollider2D polygonCollider2D = currentLevel.AddComponent<PolygonCollider2D>();
 
         // Change level to selected index
-        ChangeLevel(LevelMenuManager.currLevelIndex);
+        ChangeLevel(currLevelIndex);
 
     }
     void Update()
@@ -41,7 +42,7 @@ public class LevelSwitcher : MonoBehaviour
         var spritearray = LevelMenuManager.spritearray;
 
         // Wrap Around if index too high
-        LevelMenuManager.currLevelIndex = (LevelMenuManager.currLevelIndex) % LevelMenuManager.spritearray.Length;
+        currLevelIndex = (currLevelIndex) % LevelMenuManager.spritearray.Length;
 
         // Ensure index is within bounds
         if (index >= 0 && index < spritearray.Length)
@@ -53,7 +54,7 @@ public class LevelSwitcher : MonoBehaviour
             currentLevel.transform.localRotation = Quaternion.identity;
 
             //Update Current Index
-            LevelMenuManager.currLevelIndex = index;
+            currLevelIndex = index;
 
             //Change Sprite Representing Current Level
             currentLevel.GetComponent<SpriteRenderer>().sprite = spritearray[index];
@@ -82,6 +83,6 @@ public class LevelSwitcher : MonoBehaviour
     public void NextLevel()
     {
         // Call Change Level for next index while ensuring within bounds
-        ChangeLevel((LevelMenuManager.currLevelIndex + 1) % LevelMenuManager.spritearray.Length);
+        ChangeLevel((currLevelIndex + 1) % LevelMenuManager.spritearray.Length);
     }
 }

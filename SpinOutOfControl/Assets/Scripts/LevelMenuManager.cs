@@ -6,25 +6,35 @@ using UnityEngine.UI;
 
 public class LevelMenuManager : MonoBehaviour
 {
+    // Misc Variables
     public static Sprite[] spritearray;
+    public const string LEVEL_REACHED_KEY = "LEVEL_REACHED";
+    int LEVEL_REACHED;
+
+
+    // Menu Variables
     public string lvlLocation;
     public GameObject levelPrefab;
+    [SerializeField] GameObject indicator;
+    [SerializeField] GameObject menuGrid;
 
-    public static int currLevelIndex;
 
+    // Fixed Shifting Variables
+    [SerializeField] GameObject shiftPrefab;
+    [SerializeField] GameObject currentShiftPrefab;
 
-    // The farthest level reached by player
-    int LEVEL_REACHED;
-    public const string LEVEL_REACHED_KEY = "LEVEL_REACHED";
-
-    // Shifting Variables
-    public int MAX_SHIFTS;
     const int MIN_SHIFTS = 0;
-    public int shift;
-    public int SHIFT_SIZE;
-    public float LEVELS_PER_SHIFT;
-    public float SHIFT_DURATION;
+    const int SHIFT_GAP = 75;
+    const int SHIFT_SIZE = 800;
+    const float LEVELS_PER_SHIFT = 12f;
+    const float SHIFT_DURATION = 1f;
+
+    // Changing Shifting Variables
+    public int MAX_SHIFTS;
     public bool isShifting;
+    int shift;
+    int lastShift = -1;
+
 
     public int DEBUG_EXTRA_LEVELS = 0;
 
@@ -48,7 +58,7 @@ public class LevelMenuManager : MonoBehaviour
         // Create Level Selector Buttons
         for (int i = 1; i <= levelCount; i++)
         {
-            GameObject lvlBtn = Instantiate(levelPrefab, this.transform, false);
+            GameObject lvlBtn = Instantiate(levelPrefab, menuGrid.transform, false);
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
             // Deactivate button if not yet unlocked
@@ -61,11 +71,45 @@ public class LevelMenuManager : MonoBehaviour
 
         MAX_SHIFTS = (int)Mathf.Ceil(levelCount / LEVELS_PER_SHIFT) - 1;
         shift = 0;
+
+        createIndicator(MAX_SHIFTS, shift);
     }
 
+    // Creates Indicator using only input values
+    void createIndicator(int shifts, int currentShiftIndex)
+    {
+        // Permanently Fix Width first time
+        if (lastShift == -1)
+        {
+            RectTransform transformRect = indicator.GetComponent<RectTransform>();
+            transformRect.sizeDelta = new Vector2(SHIFT_GAP * shifts, transformRect.sizeDelta.y);
+        }
+
+        GameObject[] shiftObjs = GameObject.FindGameObjectsWithTag("Shift");
+
+        // Destory existing indicator
+        foreach (GameObject obj in shiftObjs)
+        {
+            Destroy(obj);
+        }
+
+        // Recreate Indicator
+        for (int i = 0; i < shifts + 1; i++)
+        {
+            if (i == currentShiftIndex)
+            {
+                Instantiate(currentShiftPrefab, indicator.transform);
+            }
+            else
+            {
+                Instantiate(shiftPrefab, indicator.transform);
+            }
+        }
+    }
+
+    // Co-Routine to shift the level menu
     public IEnumerator Shift(bool shiftingRight)
     {    
-
         if ((shift + 1 <= MAX_SHIFTS && shiftingRight) || (shift - 1 >= MIN_SHIFTS && !shiftingRight))
         {
             // Update shifting status
@@ -74,16 +118,19 @@ public class LevelMenuManager : MonoBehaviour
             // Change the shift number
             shift += (shiftingRight) ? 1 : -1;
 
-            // Find & Change Transform position
-            Vector3 pos = this.transform.localPosition;
+            // Find New Transform position
+            Vector3 pos = menuGrid.transform.localPosition;
             Vector3 newPos = new Vector3(-1 * shift * SHIFT_SIZE, pos.y, pos.z);
-            //this.transform.localPosition = newPos;
 
+            // Recreate Indicator
+            createIndicator(MAX_SHIFTS, shift);
+
+            // Begin Shifting Menu
             float t = 0f;
             while (t <= SHIFT_DURATION)
             {
                 t += Time.deltaTime;
-                this.transform.localPosition = Vector3.Lerp(pos, newPos, Mathf.SmoothStep(0f, SHIFT_DURATION, t));
+                menuGrid.transform.localPosition = Vector3.Lerp(pos, newPos, Mathf.SmoothStep(0f, SHIFT_DURATION, t));
                 yield return null;
             }
 

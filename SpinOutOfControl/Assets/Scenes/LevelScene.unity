@@ -238,7 +238,6 @@ GameObject:
   - component: {fileID: 470665449}
   - component: {fileID: 470665451}
   - component: {fileID: 470665450}
-  - component: {fileID: 470665452}
   m_Layer: 5
   m_Name: Levels
   m_TagString: Untagged
@@ -302,29 +301,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &470665452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470665448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1154bbac3421eed45b8c38e040fbd2f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lvlLocation: levels-new
-  levelPrefab: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
-    type: 3}
-  MAX_SHIFTS: 0
-  MIN_SHIFTS: 0
-  shift: 0
-  SHIFT_SIZE: 800
-  LEVELS_PER_SHIFT: 12
-  SHIFT_DURATION: 1
-  isShifting: 0
-  DEBUG_EXTRA_LEVELS: 30
 --- !u!1 &637601928
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +312,6 @@ GameObject:
   - component: {fileID: 637601929}
   - component: {fileID: 637601931}
   - component: {fileID: 637601930}
-  - component: {fileID: 637601932}
   m_Layer: 5
   m_Name: Shift Indicator
   m_TagString: Untagged
@@ -402,23 +377,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &637601932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637601928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99147ff86170d164e816e33766b511b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shift: {fileID: 5671508533070150282, guid: 33801bbed4cc99944a9d70fd83588aee, type: 3}
-  currentShift: {fileID: 1966683853515414497, guid: dbb05e367f394474f92f79ff934fd6f2,
-    type: 3}
-  lvlMangerObj: {fileID: 470665448}
-  SHIFT_GAP: 75
 --- !u!1 &741181826
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745125295}
+  - component: {fileID: 745125296}
   m_Layer: 5
   m_Name: LevelsMenu
   m_TagString: Untagged
@@ -524,6 +483,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &745125296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745125294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1154bbac3421eed45b8c38e040fbd2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lvlLocation: levels-new
+  levelPrefab: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
+    type: 3}
+  indicator: {fileID: 637601928}
+  menuGrid: {fileID: 470665448}
+  shiftPrefab: {fileID: 5671508533070150282, guid: 33801bbed4cc99944a9d70fd83588aee,
+    type: 3}
+  currentShiftPrefab: {fileID: 1966683853515414497, guid: dbb05e367f394474f92f79ff934fd6f2,
+    type: 3}
+  MAX_SHIFTS: 0
+  isShifting: 0
+  DEBUG_EXTRA_LEVELS: 30
 --- !u!1 &783347626
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +534,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783347626}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -576,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32382d6e63bbbc640ac4fa39d8dee36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lvlManger: {fileID: 470665452}
+  levelMenu: {fileID: 470665448}
 --- !u!114 &783347629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,7 +816,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430590181}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -858,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32382d6e63bbbc640ac4fa39d8dee36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lvlManger: {fileID: 470665452}
+  levelMenu: {fileID: 470665448}
 --- !u!114 &1430590184
 MonoBehaviour:
   m_ObjectHideFlags: 0
