@@ -24,7 +24,7 @@ public class LevelSwitcher : MonoBehaviour
         PolygonCollider2D polygonCollider2D = currentLevel.AddComponent<PolygonCollider2D>();
 
         // Change level to selected index
-        ChangeLevel(LevelManager.currLevelIndex);
+        ChangeLevel(LevelMenuManager.currLevelIndex);
 
     }
     void Update()
@@ -38,10 +38,10 @@ public class LevelSwitcher : MonoBehaviour
 
     public void ChangeLevel(int index)
     {
-        var spritearray = LevelManager.spritearray;
+        var spritearray = LevelMenuManager.spritearray;
 
         // Wrap Around if index too high
-        LevelManager.currLevelIndex = (LevelManager.currLevelIndex) % LevelManager.spritearray.Length;
+        LevelMenuManager.currLevelIndex = (LevelMenuManager.currLevelIndex) % LevelMenuManager.spritearray.Length;
 
         // Ensure index is within bounds
         if (index >= 0 && index < spritearray.Length)
@@ -53,7 +53,7 @@ public class LevelSwitcher : MonoBehaviour
             currentLevel.transform.localRotation = Quaternion.identity;
 
             //Update Current Index
-            LevelManager.currLevelIndex = index;
+            LevelMenuManager.currLevelIndex = index;
 
             //Change Sprite Representing Current Level
             currentLevel.GetComponent<SpriteRenderer>().sprite = spritearray[index];
@@ -71,12 +71,12 @@ public class LevelSwitcher : MonoBehaviour
         }
 
         // Check if farthest level has changed
-        LevelManager.CheckFarthestLevel();
+        LevelMenuManager.CheckFarthestLevel();
     }
 
     public void NextLevel()
     {
         // Call Change Level for next index while ensuring within bounds
-        ChangeLevel((LevelManager.currLevelIndex + 1) % LevelManager.spritearray.Length);
+        ChangeLevel((LevelMenuManager.currLevelIndex + 1) % LevelMenuManager.spritearray.Length);
     }
 }

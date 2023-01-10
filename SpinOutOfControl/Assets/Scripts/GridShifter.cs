@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GridShifter : MonoBehaviour
 {
-    [SerializeField] LevelManager lvlManger;
+    [SerializeField] LevelMenuManager lvlManger;
 
     public void ShiftGridLeft()
     {

@@ -27,7 +27,7 @@ public class ShiftIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LevelManager lvlManager = lvlMangerObj.GetComponent<LevelManager>();
+        LevelMenuManager lvlManager = lvlMangerObj.GetComponent<LevelMenuManager>();
         if (lvlManager.shift != lastShift)
         {
             createIndicator(lvlManager.MAX_SHIFTS, lvlManager.shift);

@@ -43,16 +43,16 @@ public class TypeSelector : MonoBehaviour
         switch(type)
         {
             case CIRCLES:
-                LevelManager.lvlLocation = circle_location;
-                LevelManager.levelPrefab = circlePrefab;
+                //LevelMenuManager.lvlLocation = circle_location;
+                //LevelMenuManager.levelPrefab = circlePrefab;
                 break;
             case TRIANGLES:
-                LevelManager.lvlLocation = triangle_location;
-                LevelManager.levelPrefab = circlePrefab;
+                //LevelMenuManager.lvlLocation = triangle_location;
+                //LevelMenuManager.levelPrefab = circlePrefab;
                 break;
             case HEXAGONS:
-                LevelManager.lvlLocation = hexagon_location;
-                LevelManager.levelPrefab = circlePrefab;
+                ///LevelMenuManager.lvlLocation = hexagon_location;
+                //LevelMenuManager.levelPrefab = circlePrefab;
                 break;
         }
 
