@@ -25,6 +25,8 @@ public class LevelManager : MonoBehaviour
     public float SHIFT_DURATION;
     public bool isShifting;
 
+    public int DEBUG_EXTRA_LEVELS = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,10 +41,9 @@ public class LevelManager : MonoBehaviour
             PlayerPrefs.SetInt(latestKey, latest);
         }
 
-
         // Load levels
         spritearray = Resources.LoadAll<Sprite>(lvlLocation);
-        int levelCount = spritearray.Length;
+        int levelCount = spritearray.Length + DEBUG_EXTRA_LEVELS;
 
         // Create Level Selector Buttons
         for (int i = 1; i <= levelCount; i++)
@@ -58,7 +59,7 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        MAX_SHIFTS = (int) Mathf.Ceil(levelCount / LEVELS_PER_SHIFT) - 1;
+        MAX_SHIFTS = (int)Mathf.Ceil(levelCount / LEVELS_PER_SHIFT) - 1;
         shift = 0;
     }
 
