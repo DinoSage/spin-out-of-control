@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 470665450}
   - component: {fileID: 470665452}
   m_Layer: 5
-  m_Name: Circle Levels
+  m_Name: Levels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7ee201d650a8c4795e5c2abdd927eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lvlLocation: levels-new
+  lvlLocation: triangle-levels
   circleLevel: {fileID: 2226716879759697595, guid: f90b69f54f4132c4bbf1392f60713b02,
     type: 3}
   MAX_SHIFTS: 0
@@ -322,6 +322,8 @@ MonoBehaviour:
   shift: 0
   SHIFT_SIZE: 800
   LEVELS_PER_SHIFT: 12
+  SHIFT_DURATION: 1
+  isShifting: 0
 --- !u!1 &741181826
 GameObject:
   m_ObjectHideFlags: 0

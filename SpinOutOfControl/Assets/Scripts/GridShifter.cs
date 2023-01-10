@@ -8,11 +8,13 @@ public class GridShifter : MonoBehaviour
 
     public void ShiftGridLeft()
     {
-        StartCoroutine(lvlManger.Shift(false));
+        if (!lvlManger.isShifting)
+            StartCoroutine(lvlManger.Shift(false));
     }
 
     public void ShiftGridRight()
     {
-        StartCoroutine(lvlManger.Shift(true));
+        if (!lvlManger.isShifting)
+            StartCoroutine(lvlManger.Shift(true));
     }
 }
