@@ -506,7 +506,7 @@ MonoBehaviour:
     type: 3}
   MAX_SHIFTS: 0
   isShifting: 0
-  DEBUG_EXTRA_LEVELS: 30
+  DEBUG_EXTRA_LEVELS: 0
 --- !u!1 &783347626
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32382d6e63bbbc640ac4fa39d8dee36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelMenu: {fileID: 470665448}
+  levelMenu: {fileID: 745125294}
 --- !u!114 &783347629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32382d6e63bbbc640ac4fa39d8dee36b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelMenu: {fileID: 470665448}
+  levelMenu: {fileID: 745125294}
 --- !u!114 &1430590184
 MonoBehaviour:
   m_ObjectHideFlags: 0
