@@ -17,6 +17,7 @@ public class LevelMenuManager : MonoBehaviour
     public GameObject levelPrefab;
     [SerializeField] GameObject indicator;
     [SerializeField] GameObject menuGrid;
+    [SerializeField] GameObject typeMenu;
 
 
     // Fixed Shifting Variables
@@ -41,6 +42,9 @@ public class LevelMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Set Type Menu to Inactive
+        typeMenu.SetActive(false);
+
         // Retrive Farthest Level reached
         LEVEL_REACHED = PlayerPrefs.GetInt(LEVEL_REACHED_KEY, -1);
 
