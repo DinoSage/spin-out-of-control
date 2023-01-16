@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,13 +8,14 @@ using UnityEngine.UI;
 public class LevelMenuManager : MonoBehaviour
 {
     // Misc Variables
+    public static string lvlLocation;
+    public static Color lvlColor = Color.white;
     public static Sprite[] spritearray;
-    public const string LEVEL_REACHED_KEY = "LEVEL_REACHED";
-    int LEVEL_REACHED;
+    public static string LEVEL_REACHED_KEY;
+    int LEVEL_REACHED = 0;
 
 
     // Menu Variables
-    public string lvlLocation;
     public GameObject levelPrefab;
     [SerializeField] GameObject indicator;
     [SerializeField] GameObject menuGrid;
@@ -42,6 +44,9 @@ public class LevelMenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        Debug.Log("Level Menu Manager Start");
+
         // Set Type Menu to Inactive
         typeMenu.SetActive(false);
 
@@ -64,6 +69,10 @@ public class LevelMenuManager : MonoBehaviour
         {
             GameObject lvlBtn = Instantiate(levelPrefab, menuGrid.transform, false);
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
+
+            // Change Color
+            //Image lvlImg = lvlBtn.GetComponent<Image>();
+            //lvlImg.color = lvlColor;
 
             // Deactivate button if not yet unlocked
             if (i > LEVEL_REACHED)

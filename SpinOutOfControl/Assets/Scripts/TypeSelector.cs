@@ -9,7 +9,6 @@ public class TypeSelector : MonoBehaviour
     [SerializeField] GameObject levels;
     [SerializeField] GameObject lvlMenu;
 
-    int levelType = 0;
     const int CIRCLES = 0;
     const int TRIANGLES = 1;
     const int HEXAGONS = 2;
