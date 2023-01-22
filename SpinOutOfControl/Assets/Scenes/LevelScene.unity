@@ -1532,7 +1532,7 @@ MonoBehaviour:
     type: 3}
   MAX_SHIFTS: 0
   isShifting: 0
-  DEBUG_EXTRA_LEVELS: 0
+  DEBUG_EXTRA_LEVELS: 30
 --- !u!1 &783347626
 GameObject:
   m_ObjectHideFlags: 0
