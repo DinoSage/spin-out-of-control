@@ -83,8 +83,8 @@ public class LevelMenuManager : MonoBehaviour
             lvlBtn.GetComponent<LevelSelector>().ChangeText(i.ToString());
 
             // Change Color
-            //Image lvlImg = lvlBtn.GetComponent<Image>();
-            //lvlImg.color = lvlColor;
+            Image lvlImg = lvlBtn.GetComponent<Image>();
+            lvlImg.color = lvlColor;
 
             // Deactivate button if not yet unlocked
             if (i > LEVEL_REACHED)
