@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99da8deda097db344a8db3e8f1e9ef94
+guid: c02e4d8e30cd5cf41a75e3edd0a1decd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: levels-new_0
+      name: circle-levels_0
       rect:
         serializedVersion: 2
-        x: 151
-        y: 1071
-        width: 222
-        height: 220
+        x: 181
+        y: 3540
+        width: 317
+        height: 315
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8e307a304391204e98ce51226409400
-      internalID: 414667143
+      spriteID: 4689305f5c664e14296506183ee0e8de
+      internalID: -1387058656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_1
+      name: circle-levels_1
       rect:
         serializedVersion: 2
-        x: 407
-        y: 1085
-        width: 222
-        height: 220
+        x: 1097
+        y: 3419
+        width: 441
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e4398bca6d08d4c9a385d2e4d143b2
-      internalID: 1074846882
+      spriteID: 66b1f6127fe28274198c18320a0c978d
+      internalID: -1543314780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_2
+      name: circle-levels_2
       rect:
         serializedVersion: 2
-        x: 648
-        y: 1059
-        width: 222
-        height: 222
+        x: 2075
+        y: 3419
+        width: 441
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b6955ba0633084b886aafef2b7ea8a
-      internalID: 388473562
+      spriteID: e648c0642e958d64680d116f38127451
+      internalID: -107971463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_3
+      name: circle-levels_3
       rect:
         serializedVersion: 2
-        x: 119
-        y: 817
-        width: 222
-        height: 222
+        x: 3055
+        y: 3419
+        width: 439
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0de8027b68cf8254aa8cf5493b25b1d1
-      internalID: -938291305
+      spriteID: 58d4fc61aa944774b96f9c7e5b6c60ff
+      internalID: -173438767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_4
+      name: circle-levels_4
       rect:
         serializedVersion: 2
-        x: 389
-        y: 808
-        width: 222
-        height: 222
+        x: 4033
+        y: 3419
+        width: 439
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ae09f30b8632c34ba8778c244245e88
-      internalID: 1120209756
+      spriteID: c18dd0f61b5e52348a5bb7920929325b
+      internalID: 2101454285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_5
+      name: circle-levels_5
       rect:
         serializedVersion: 2
-        x: 654
-        y: 807
-        width: 222
-        height: 211
+        x: 59
+        y: 2319
+        width: 561
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6b88e3e4a570fd468cbc2832624809b
-      internalID: 210023521
+      spriteID: 0a116c502ea13b84f829ac1319b70e81
+      internalID: -1957009600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_6
+      name: circle-levels_6
       rect:
         serializedVersion: 2
-        x: 92
-        y: 546
-        width: 222
-        height: 222
+        x: 1037
+        y: 2319
+        width: 561
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34cf55cdac3db4d4f9bcbdbc817f5c4b
-      internalID: -1889145786
+      spriteID: 2a7f744e891b7014e93f008e0cd053ac
+      internalID: 663626388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_7
+      name: circle-levels_7
       rect:
         serializedVersion: 2
-        x: 337
-        y: 429
-        width: 308
-        height: 309
+        x: 2015
+        y: 2319
+        width: 561
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df40dad3017e0fb4193d6980f1310872
-      internalID: -1905789365
+      spriteID: a273008a494722f459a087cd62a5f38a
+      internalID: -2109916407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_8
+      name: circle-levels_8
       rect:
         serializedVersion: 2
-        x: 692
-        y: 438
-        width: 308
-        height: 308
+        x: 2993
+        y: 2319
+        width: 561
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +334,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63e59d3d48739cc45878c17519a9d8fa
-      internalID: 1872124442
+      spriteID: 8d73d83614124b341ab13a60a8effd8a
+      internalID: 2109771006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_9
+      name: circle-levels_9
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 2319
+        width: 561
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb6b70ade3c1314192bb22b542fca22
+      internalID: 888714469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 14
-        width: 394
-        height: 395
+        y: 1219
+        width: 680
+        height: 683
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d220bbf17b7a34c95b70b0d830ff3a
-      internalID: 1248713406
+      spriteID: 751d25cf698f4d74ab7535e43d742d9c
+      internalID: -1324735660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levels-new_10
+      name: circle-levels_11
       rect:
         serializedVersion: 2
-        x: 438
-        y: 0
-        width: 395
-        height: 394
+        x: 975
+        y: 1219
+        width: 683
+        height: 683
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +397,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d331a2eb137ada40810323e93ad1731
-      internalID: -1409522251
+      spriteID: 1ac73d150f477cb46812a8ef6ac5cb95
+      internalID: -239028075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_12
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1219
+        width: 685
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3756c2e911674fa4e8c98f6ed4be9db2
+      internalID: -1879673267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_13
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 1219
+        width: 683
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f15895cffc5f44394c2a41ae94ee55
+      internalID: -720508607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_14
+      rect:
+        serializedVersion: 2
+        x: 3911
+        y: 1219
+        width: 802
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ccd760a5aae2b49a686331ed463f48
+      internalID: -152713991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 802
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd9e79970878b844a377e0519fe8f11
+      internalID: -1235446466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 675
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40cf1857a6d0b84fa3108d3004a2ad1
+      internalID: 610423504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_17
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 0
+        width: 927
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2dab6bdfc16194d8425995959c0db6
+      internalID: 124869296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_18
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 0
+        width: 926
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6593e6c99c19d684ca17cb8c601ea9bb
+      internalID: -1434769315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_19
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 0
+        width: 927
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c45e928c7e825f40960d522c91540d4
+      internalID: -493104461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: circle-levels_20
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 0
+        width: 924
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2260d2b550bc44a8a68d1853e4cc66
+      internalID: -776191320
       vertices: []
       indices: 
       edges: []
@@ -393,17 +603,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      levels-new_6: -1889145786
-      levels-new_1: 1074846882
-      levels-new_3: -938291305
-      levels-new_7: -1905789365
-      levels-new_2: 388473562
-      levels-new_8: 1872124442
-      levels-new_4: 1120209756
-      levels-new_9: 1248713406
-      levels-new_10: -1409522251
-      levels-new_5: 210023521
-      levels-new_0: 414667143
+      circle-levels_9: 888714469
+      circle-levels_11: -239028075
+      circle-levels_14: -152713991
+      circle-levels_4: 2101454285
+      circle-levels_15: -1235446466
+      circle-levels_17: 124869296
+      circle-levels_18: -1434769315
+      circle-levels_1: -1543314780
+      circle-levels_3: -173438767
+      circle-levels_10: -1324735660
+      circle-levels_19: -493104461
+      circle-levels_2: -107971463
+      circle-levels_5: -1957009600
+      circle-levels_20: -776191320
+      circle-levels_7: -2109916407
+      circle-levels_0: -1387058656
+      circle-levels_13: -720508607
+      circle-levels_8: 2109771006
+      circle-levels_6: 663626388
+      circle-levels_12: -1879673267
+      circle-levels_16: 610423504
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

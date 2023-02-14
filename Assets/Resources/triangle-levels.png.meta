@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01e51e9057feb494da8994258224f4aa
+guid: 98a9d416337c280479c9ab4d3bd63490
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,43 +152,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: triangle-levels_1
+      name: triangle-levels_0
       rect:
         serializedVersion: 2
-        x: 953
-        y: 2443
-        width: 550
-        height: 479
-      alignment: 9
-      pivot: {x: 0.5061448, y: 0.34477854}
+        x: 462
+        y: 4976
+        width: 590
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36ec6ccc89bb5c149a574b6f0ec967d0
-      internalID: -831991406
+      spriteID: b3630576eb223ee448a6d17e95728648
+      internalID: 1638191340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangle-levels_0
+      name: triangle-levels_1
       rect:
         serializedVersion: 2
-        x: 373
-        y: 2516
-        width: 365
-        height: 318
-      alignment: 9
-      pivot: {x: 0.5000005, y: 0.372468}
+        x: 2043
+        y: 4976
+        width: 552
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76137a0481007fe438632e1faf181aec
-      internalID: 519646862
+      spriteID: 27c5d9409a5420d49a63a4ca948eca14
+      internalID: -1929091297
       vertices: []
       indices: 
       edges: []
@@ -197,40 +197,19 @@ TextureImporter:
       name: triangle-levels_2
       rect:
         serializedVersion: 2
-        x: 1646
-        y: 2452
-        width: 543
-        height: 470
-      alignment: 9
-      pivot: {x: 0.50000024, y: 0.3346155}
+        x: 3486
+        y: 4759
+        width: 853
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa083301fecbad44b4c06aa062d1811
-      internalID: -708920468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: triangle-levels_5
-      rect:
-        serializedVersion: 2
-        x: 1938
-        y: 1704
-        width: 722
-        height: 623
-      alignment: 9
-      pivot: {x: 0.50000036, y: 0.34268332}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4da1fd5a04b77514f8774c00a66250e3
-      internalID: 467859221
+      spriteID: 3604547376ad3314f854f2a234292222
+      internalID: 1972838368
       vertices: []
       indices: 
       edges: []
@@ -239,19 +218,19 @@ TextureImporter:
       name: triangle-levels_3
       rect:
         serializedVersion: 2
-        x: 265
-        y: 1908
-        width: 543
-        height: 472
-      alignment: 9
-      pivot: {x: 0.5000001, y: 0.36395678}
+        x: 5060
+        y: 4759
+        width: 803
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 150fa94a89d78cf4e9092a735a023af6
-      internalID: -1631695114
+      spriteID: 2174dc5d563a4f14aa52f53c5b43fb04
+      internalID: 642205024
       vertices: []
       indices: 
       edges: []
@@ -260,19 +239,40 @@ TextureImporter:
       name: triangle-levels_4
       rect:
         serializedVersion: 2
-        x: 928
-        y: 1679
-        width: 722
-        height: 627
-      alignment: 9
-      pivot: {x: 0.5046811, y: 0.3490769}
+        x: 6629
+        y: 4759
+        width: 840
+        height: 665
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08702afb3a5701a4ab0796bac982f303
-      internalID: 146318021
+      spriteID: d47a8c66c99873e46ba250cadeab8dfa
+      internalID: -1523448586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 3170
+        width: 1021
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7259f26038c724daef19a4fb036276
+      internalID: 894011342
       vertices: []
       indices: 
       edges: []
@@ -281,19 +281,19 @@ TextureImporter:
       name: triangle-levels_6
       rect:
         serializedVersion: 2
-        x: 66
-        y: 1095
-        width: 722
-        height: 626
-      alignment: 9
-      pivot: {x: 0.50000024, y: 0.36503196}
+        x: 1820
+        y: 3170
+        width: 1021
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83b5f7a092e798248b87cd1a3543706c
-      internalID: 757262226
+      spriteID: 9961c16d93fed98458960920c9d44908
+      internalID: -1658872535
       vertices: []
       indices: 
       edges: []
@@ -302,19 +302,19 @@ TextureImporter:
       name: triangle-levels_7
       rect:
         serializedVersion: 2
-        x: 917
-        y: 800
-        width: 900
-        height: 780
-      alignment: 9
-      pivot: {x: 0.49624497, y: 0.352684}
+        x: 3390
+        y: 3170
+        width: 1024
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 938310e4353ef2a47bd3362ce537367b
-      internalID: 1458547627
+      spriteID: 6bee89e292ddaab4e9606cfa49a9e342
+      internalID: -459116891
       vertices: []
       indices: 
       edges: []
@@ -323,19 +323,19 @@ TextureImporter:
       name: triangle-levels_8
       rect:
         serializedVersion: 2
-        x: 1937
-        y: 767
-        width: 898
-        height: 780
-      alignment: 9
-      pivot: {x: 0.5000003, y: 0.3440184}
+        x: 4963
+        y: 3170
+        width: 1021
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce6ed6db0957d0c4b91ba638750d3155
-      internalID: 1825460844
+      spriteID: 8e83b98bbff506c4c8227d75802e111d
+      internalID: 1334967127
       vertices: []
       indices: 
       edges: []
@@ -344,19 +344,229 @@ TextureImporter:
       name: triangle-levels_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 898
-        height: 778
-      alignment: 9
-      pivot: {x: 0.5000002, y: 0.34361753}
+        x: 6537
+        y: 3170
+        width: 1021
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8698a4f2c11951848833860f1e575d96
-      internalID: 1338779581
+      spriteID: 7d4eec4d8ef676e468b0e7307768a26d
+      internalID: -1534263846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1584
+        width: 1273
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537d3bc174648914eb32159427b79e25
+      internalID: 1713715762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_11
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1584
+        width: 1272
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bdce28b8481be4bb21b262ac48d236
+      internalID: 628499412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_12
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 1584
+        width: 1276
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630f70daab794a64b9cc20325b656dd6
+      internalID: -142193706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_13
+      rect:
+        serializedVersion: 2
+        x: 4838
+        y: 1584
+        width: 1272
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea66f27eef9af7747a34efb0e1851df6
+      internalID: 507455101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_14
+      rect:
+        serializedVersion: 2
+        x: 6411
+        y: 1584
+        width: 1273
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d94a2fcf707834fbba691e37af9115
+      internalID: 1810923182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1518
+        height: 1317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d3439e5ff4dc64d880dc09c7899088
+      internalID: 825773600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_16
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 1524
+        height: 1317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd8350c57814374d91cf31a956d0bd7
+      internalID: 1984017621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_17
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 0
+        width: 1525
+        height: 1317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6274490562dffe4ea8e3b4875671d74
+      internalID: -524285966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_18
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 0
+        width: 1524
+        height: 1317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d757f2d9f2c5c2468ee1e4cdfffe18d
+      internalID: 1518034945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangle-levels_19
+      rect:
+        serializedVersion: 2
+        x: 6286
+        y: 0
+        width: 1518
+        height: 1317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0908e3faea59aa24cbebf3418afd867b
+      internalID: 1518281530
       vertices: []
       indices: 
       edges: []
@@ -372,16 +582,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      triangle-levels_2: -708920468
-      triangle-levels_1: -831991406
-      triangle-levels_6: 757262226
-      triangle-levels_0: 519646862
-      triangle-levels_4: 146318021
-      triangle-levels_9: 1338779581
-      triangle-levels_3: -1631695114
-      triangle-levels_7: 1458547627
-      triangle-levels_5: 467859221
-      triangle-levels_8: 1825460844
+      triangle-levels_2: 1972838368
+      triangle-levels_1: -1929091297
+      triangle-levels_11: 628499412
+      triangle-levels_6: -1658872535
+      triangle-levels_18: 1518034945
+      triangle-levels_0: 1638191340
+      triangle-levels_4: -1523448586
+      triangle-levels_9: -1534263846
+      triangle-levels_16: 1984017621
+      triangle-levels_3: 642205024
+      triangle-levels_19: 1518281530
+      triangle-levels_7: -459116891
+      triangle-levels_13: 507455101
+      triangle-levels_17: -524285966
+      triangle-levels_5: 894011342
+      triangle-levels_8: 1334967127
+      triangle-levels_10: 1713715762
+      triangle-levels_14: 1810923182
+      triangle-levels_15: 825773600
+      triangle-levels_12: -142193706
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

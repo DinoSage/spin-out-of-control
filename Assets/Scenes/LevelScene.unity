@@ -1532,7 +1532,7 @@ MonoBehaviour:
     type: 3}
   MAX_SHIFTS: 0
   isShifting: 0
-  DEBUG_EXTRA_LEVELS: 30
+  DEBUG_EXTRA_LEVELS: 0
 --- !u!1 &783347626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,8 +2576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelsMenu: {fileID: 745125294}
   levelLocations:
-  - circle-levels
-  - triangle-levels
+  - circles
+  - triangles
   - circle-levels
   levelColors:
   - {r: 0.6, g: 0.83921576, b: 0.58431375, a: 1}
