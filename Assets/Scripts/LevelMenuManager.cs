@@ -54,6 +54,7 @@ public class LevelMenuManager : MonoBehaviour
 
         // Retrive Farthest Level reached
         LEVEL_REACHED = PlayerPrefs.GetInt(LEVEL_REACHED_KEY, -1);
+        LEVEL_REACHED += 20;
 
         if (LEVEL_REACHED < 1)
         {
