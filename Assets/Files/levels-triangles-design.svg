@@ -29,9 +29,9 @@
      inkscape:document-units="px"
      showgrid="true"
      showborder="false"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="-76033.866"
-     inkscape:cy="1754.5087"
+     inkscape:zoom="0.5"
+     inkscape:cx="-76282"
+     inkscape:cy="1424"
      inkscape:window-width="2560"
      inkscape:window-height="1494"
      inkscape:window-x="2549"
@@ -1582,7 +1582,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g14767"
+       id="2"
        transform="matrix(0.26458333,0,0,0.26458333,-20184.204,270.24274)"
        style="fill:none;fill-opacity:1;stroke:#fb770e;stroke-opacity:1"
        inkscape:export-filename="..\..\..\..\..\..\..\Downloads\triangle-levels.png"
@@ -1704,7 +1704,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g17051"
+       id="3"
        transform="matrix(0.26458333,0,0,0.26458333,-20083.662,270.24274)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="68"
@@ -1925,7 +1925,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g17901"
+       id="5"
        transform="matrix(0.26458333,0,0,0.26458333,-19865.117,270.24274)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="46"
@@ -2143,7 +2143,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g18747"
+       id="4"
        transform="matrix(0.26458333,0,0,0.26458333,-19974.39,270.24274)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="68"
@@ -2349,7 +2349,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g19284"
+       id="7"
        transform="matrix(0.26458333,0,0,0.26458333,-20201.667,365.47847)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="145"
@@ -2714,7 +2714,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g20569"
+       id="6"
        transform="matrix(0.26458333,0,0,0.26458333,-20310.939,365.47847)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="145"
@@ -3049,7 +3049,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g21494"
+       id="8"
        transform="matrix(0.26458333,0,0,0.26458333,-20092.394,365.47847)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="112"
@@ -3411,7 +3411,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g22504"
+       id="12"
        transform="matrix(0.26458333,0,0,0.26458333,-20210.398,460.71419)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="167"
@@ -4022,7 +4022,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g23539"
+       id="11"
        transform="matrix(0.26458333,0,0,0.26458333,-20319.671,460.71419)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="167"
@@ -4564,7 +4564,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g24578"
+       id="13"
        transform="matrix(0.26458333,0,0,0.26458333,-20101.125,460.71419)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="189"
@@ -5136,7 +5136,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g4671"
+       id="1"
        transform="matrix(0.26458333,0,0,0.26458333,-20293.477,270.24274)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="35"
@@ -5255,7 +5255,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g10765"
+       id="9"
        transform="matrix(0.26458333,0,0,0.26458333,-19983.121,365.47847)"
        style="stroke:#fb770e;stroke-opacity:1"><g
          id="g11749"
@@ -5664,7 +5664,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g13889"
+       id="10"
        transform="matrix(0.26458333,0,0,0.26458333,-19873.848,365.47847)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="112"
@@ -6071,7 +6071,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g17177"
+       id="14"
        transform="matrix(0.26458333,0,0,0.26458333,-19991.852,460.71419)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="167"
@@ -6634,7 +6634,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g18955"
+       id="15"
        transform="matrix(0.26458333,0,0,0.26458333,-19882.579,460.71419)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="134"
@@ -7203,7 +7203,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g21288"
+       id="16"
        transform="matrix(0.26458333,0,0,0.26458333,-20328.402,555.94992)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="156"
@@ -8042,7 +8042,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g22767"
+       id="17"
        transform="matrix(0.26458333,0,0,0.26458333,-20219.129,555.94992)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="156"
@@ -8902,7 +8902,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g24239"
+       id="18"
        transform="matrix(0.26458333,0,0,0.26458333,-20109.856,555.94992)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="145"
@@ -9717,7 +9717,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g25651"
+       id="19"
        transform="matrix(0.26458333,0,0,0.26458333,-20000.583,555.94992)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="167"
@@ -10499,7 +10499,7 @@
        stroke-width="2"
        stroke-linecap="round"
        stroke-linejoin="round"
-       id="g27631"
+       id="20"
        transform="matrix(0.26458333,0,0,0.26458333,-19891.31,555.94992)"
        style="stroke:#fb770e;stroke-opacity:1"><line
          x1="178"
