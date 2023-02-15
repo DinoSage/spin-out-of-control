@@ -31,7 +31,7 @@ public class LevelSwitcher : MonoBehaviour
     void Update()
     {
         // Key Input to return to level selector
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene("LevelScene");
         }

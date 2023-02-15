@@ -6,6 +6,7 @@ public class Rotate : MonoBehaviour
 {
     int direction = 0; //-1 Left, 1 Right
     [SerializeField] float rotationSpeed;
+    [SerializeField]
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +17,15 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(0 > Input.GetAxisRaw("Horizontal"))
+        // Get touch details
+        Vector3 touchPos = new Vector3(0, 0, 0);
+        if (Input.touchCount >= 1)
+            touchPos = Camera.main.ScreenToWorldPoint(Input.GetTouch(Input.touchCount - 1).position);
+
+        if(0 > Input.GetAxisRaw("Horizontal") || touchPos.x < 0)
         {
             direction = 1;
-        } else if(0 < Input.GetAxisRaw("Horizontal"))
+        } else if(0 < Input.GetAxisRaw("Horizontal") || touchPos.x > 0)
         {
             direction = -1;
         } else
